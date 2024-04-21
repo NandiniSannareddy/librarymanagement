@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Library Management</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+        <link rel="stylesheet" href="library.css" type="text/css"/>
+
+
+    </head>
+    <body>
+        <section id="sec1">
+            <link rel="stylesheet" href="library.css" type="text/css"/>
+            <nav >
+                <div id="nav">
+                    <i class="fa-solid fa-book-open-reader" id="lib">Library</i>
+
+                    <ul id="list">
+                        <li>
+                            <a href="#sec1">Home</a>
+                        </li>
+                        <li>
+                            <a href="signin.html">Signin</a>
+                        </li>
+                        <li>
+                            <a href="signup.html">Signup</a>
+                        </li>
+                        <li>
+                            <a href="admin.html">Admin</a>
+                        </li>
+                        <li>
+                            <a href="#sec2">Contact</a>
+                        </li>
+                    </ul>
+                    <i onclick="menu1()" class="fa-solid fa-bars" id="menu"  > </i>
+                </div>
+            </nav>
+
+            <div class="time">
+                <center><h1 >Timings </h1></center>
+                <center> <p>opens at 9 am</p> </center>
+                <center><p>closes at 4pm</p></center>
+            </div>
+
+        </section>
+        <script>
+
+            function menu1() {
+                var menu = document.getElementById('menu');
+                var list = document.getElementById('list');
+
+                list.style.marginLeft = (list.style.marginLeft === '0%' ? '100%' : '0%');
+                menu.classList.toggle('fa-times');
+            }
+        </script>
+
+        <section id="sec2">
+
+
+            <center> <h1 style="color:#2FF3E0;">CONTACT US</h1> </center>
+
+
+            <div id="contact">
+
+
+                <div class="cospace">
+                    <div>
+                        <i class="fa-solid fa-phone icon"> CALL US</i>
+                        <pre class="symbol">+91 1234567890</pre>
+                    </div>
+                </div>
+
+                <div class="cospace">
+                    <div >
+                        <i class="fa-solid fa-location-dot icon">LOCATION</i>
+
+                        <pre class="symbol">AP, Vidyanagar-N.B.K.R.I.S.T</pre>
+                    </div>
+                </div>
+
+                <div class="cospace">
+                    <div>
+                        <i class="fa-solid fa-envelope icon ">EMAIL</i>                
+                        <pre class="symbol">nandinisannareddy@gmail.com</pre>
+                    </div>
+                </div>
+
+                <div class="cospace">
+                    <div >
+                        <a > <i class="fa-brands fa-linkedin social"></i></a>
+                        <a > <i class="fa-brands fa-github social"></i> </a>
+                        <a><i class="fa-brands fa-facebook social"></i></a>
+                        <a><i class="fa-brands fa-twitter social"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="message">
+
+                <div class="cospace">
+                    <div>
+                        <label class="label">NAME:</label>
+                        <input class="input" type="text" placeholder="enter your name">
+                    </div>
+                </div>
+
+                <div class="cospace">
+                    <div>
+                        <label class="label">EMAIL:</label>
+                        <input  class="input" type="email" placeholder="enter your email id">
+                    </div>
+                </div>
+
+                <div class="cospace">
+                    <div>
+
+                        <label class="label"> MESSAGE:</label>
+                        <textarea class="input" placeholder="message" rows="4"> </textarea>
+                    </div>
+                </div>
+
+                <div class="cospace">
+                    <a href="mailto:nandinisannareddy@gmail.com"> <button class="btn">Send Mail</button> </a>
+                </div>
+
+            </div>     
+
+        </section>
+
+
+        <footer style="color:#4C5270"> <center>copyright &copy 2024, library management</center></footer>
+    </body>
+</html>
